@@ -1,0 +1,232 @@
+* {
+    font-family: 'Playfair Display', serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav_header{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    position: relative; 
+}
+
+.nav_bar{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.nav_links li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #fa2b2b;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_links a:hover{
+    color: #1100ff;
+}
+
+
+
+/* header */
+
+.main_header {
+    height: 400px;
+    width: 100%;
+}
+
+.banner {
+    position: relative;
+    background-image: url(https://www.speedcarwassh.com/wp-content/uploads/2024/07/Revitalize-Your-Vehicle-with-Top-Notch-Car-Wash-Service-at-Speed-Car-Wash.webp);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    color: #d0ffc7;
+}
+
+.banner_heading {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.banner_heading h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner_heading p {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner_heading button{
+    height: 50px;
+    width: 150px;
+    background-color: #75ff35;
+    border: 2px solid black;
+    border-radius: 6rem;
+    margin: 10px 10px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner_heading button:hover{
+    background-color:#ffff00;
+}
+
+
+/* services */
+.services{
+    position: relative;
+    width: 100%;
+}
+
+.heading h2{
+    position: relative;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.services_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.services_div h4 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.washing_services {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+}
+
+.washing_services img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.quick_service {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+}
+
+.quick_service img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    clip-path: ellipse(25% 40% at 50% 50%);
+}
+
+.detailing_services {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+}
+
+.detailing_services img {
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    background-size: cover;
+    background-position: center;
+    clip-path: inset(5% 20% 15% 10%);
+}
+
+.vehicle_wrapping {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+}
+
+.vehicle_wrapping img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+/* footer */
+.footer{
+    height: 205px;
+    width: 100%;
+    background-color: #000;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    /*  */
+}
+
+.icon_set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icon{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.icon i{
+   font-size: 2rem;
+   color: rgb(255, 255, 255);
+}
+
+.icon i:hover{
+    color: #ff0000;
+ }
+
+.contact_heading{
+    margin-top: 20px;
+}
+
+
+
+
+
+
