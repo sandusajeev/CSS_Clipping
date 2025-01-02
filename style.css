@@ -62,14 +62,14 @@
 }
 
 .banner_heading h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     margin: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .banner_heading p {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 10px 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
