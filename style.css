@@ -25,15 +25,44 @@
     margin: 0px 10px;
 }
 
-.nav_links a{
+/* .nav_links a{
     text-decoration: none;
     color: #fa2b2b;
     font-size: 20px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .nav_links a:hover{
     color: #1100ff;
+} */
+
+.nav_links a {
+    position: relative;
+    text-decoration: none;
+    color: #fa2b2b;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1100ff;
+    transition: width 0.3s ease;
+}
+
+.nav_links a:hover {
+    color: #1100ff;
+}
+
+.nav_links a:hover::after {
+    width: 100%;
 }
 
 
@@ -57,7 +86,7 @@
 
 .banner_heading {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: 10%;
 }
 
@@ -78,7 +107,7 @@
 .banner_heading button{
     height: 50px;
     width: 150px;
-    background-color: #75ff35;
+    background-color: #bd0f0f;
     border: 2px solid black;
     border-radius: 6rem;
     margin: 10px 10px;
@@ -88,100 +117,110 @@
 }
 
 .banner_heading button:hover{
-    background-color:#ffff00;
+    color: white;
+    background-color:#ff0123;
 }
 
+.sevices{
+    min-height: 500px;
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
 
-/* services */
-.services{
-    position: relative;
-    width: 100%;
+    padding-top: 20px;
 }
 
 .heading h2{
-    position: relative;
-    width: 100%;
-    font-size: 35px;
-    text-align: center;
-    padding: 20px 0px;
+      text-align: center;
+      font-size: 40px;
+      color: #791515;
+      padding-bottom: 10px;
 }
 
-.services_div {
+.services {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    padding-left: 20px;
+  
 }
 
-.services_div h4 {
-    font-size: 20px;
-    text-align: center;
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.washing_services {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 350px;
+.service_heading{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-left: 50px;
+    color: #1100ff;
+
 }
 
-.washing_services img {
+.img1{
     height: 300px;
     width: 300px;
-    background-size: cover;
-    background-position: center;
+    margin: 10px;
+    overflow: hidden;
+   
+}
+
+.img1 img{
+    height: 300px;
+    width: 300px;
+}
+
+.Wimg1{
     clip-path: circle(50% at 50% 50%);
 }
 
-.quick_service {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 350px;
-}
-
-.quick_service img {
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    clip-path: ellipse(25% 40% at 50% 50%);
-}
-
-.detailing_services {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 350px;
-}
-
-.detailing_services img {
-    height: 300px;
-    width: 300px;
-    margin-left: 20px;
-    background-size: cover;
-    background-position: center;
-    clip-path: inset(5% 20% 15% 10%);
-}
-
-.vehicle_wrapping {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 350px;
-}
-
-.vehicle_wrapping img {
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
+.Wimg2{
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.Wimg3{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.Wimg4{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.Qimg1{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.Qimg2{
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+.Qimg3{
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.Qimg4{
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.Dimg1{
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+.Dimg2{
+    clip-path: ellipse(32% 50% at 50% 50%);
+}
+.Dimg3{
+    clip-path: inset(0 12% 0 13%);
+}
+.Dimg4{
+    clip-path: polygon(50% 0%, 66% 34%, 98% 35%, 75% 60%, 89% 100%, 52% 78%, 10% 100%, 24% 60%, 2% 35%, 36% 34%);
+}
+
+.Vimg1{
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.Vimg2{
+    
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.Vimg3{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.Vimg4{
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
 /* footer */
@@ -224,9 +263,3 @@
 .contact_heading{
     margin-top: 20px;
 }
-
-
-
-
-
-
