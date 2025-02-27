@@ -76,7 +76,7 @@
 
 .banner {
     position: relative;
-    background-image: url(https://www.speedcarwassh.com/wp-content/uploads/2024/07/Revitalize-Your-Vehicle-with-Top-Notch-Car-Wash-Service-at-Speed-Car-Wash.webp);
+    background-image: url('https://wallpapers.com/images/featured/car-wash-0d91u3sqo0qw441a.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -152,7 +152,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     margin-bottom: 20px;
     font-size: 30px;
     padding-left: 50px;
-    color: #1100ff;
+    color: #150e7e;
 
 }
 
